@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Image Generation" />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <title>Nurture Nest</title>
+    <script defer="defer" src="/store/static/js/main.16770fb0.js"></script>
+    <link href="/store/static/css/main.e28f4974.css" rel="stylesheet" />
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script>
+      const inputs = document.querySelectorAll(".input");
+      function addcl() {
+        this.parentNode.parentNode.classList.add("focus");
+      }
+      function remcl() {
+        let e = this.parentNode.parentNode;
+        "" == this.value && e.classList.remove("focus");
+      }
+      inputs.forEach((e) => {
+        e.addEventListener("focus", addcl), e.addEventListener("blur", remcl);
+      });
+    </script>
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  </body>
+</html>
